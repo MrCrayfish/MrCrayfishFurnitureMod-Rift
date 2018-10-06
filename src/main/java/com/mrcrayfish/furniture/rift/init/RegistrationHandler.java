@@ -2,10 +2,12 @@ package com.mrcrayfish.furniture.rift.init;
 
 import com.mrcrayfish.furniture.rift.Constants;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
 import org.dimdev.rift.listener.BlockAdder;
+import org.dimdev.rift.listener.EntityTypeAdder;
 import org.dimdev.rift.listener.ItemAdder;
 
 import java.util.HashMap;

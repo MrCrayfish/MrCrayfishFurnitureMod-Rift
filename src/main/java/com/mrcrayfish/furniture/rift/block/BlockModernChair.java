@@ -2,6 +2,7 @@ package com.mrcrayfish.furniture.rift.block;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
+import com.mrcrayfish.furniture.rift.entity.EntitySeat;
 import com.mrcrayfish.furniture.rift.utils.VoxelShapeHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -80,8 +81,7 @@ public class BlockModernChair extends BlockFurniture
     @Override
     public boolean onBlockActivated(IBlockState state, World world, BlockPos pos, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
     {
-        //TODO add in sitting
-        return false;
+        return EntitySeat.create(world, pos, 5.5 * 0.0625, player);
     }
 /*
     @Override

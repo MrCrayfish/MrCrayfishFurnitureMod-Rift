@@ -1,0 +1,15 @@
+{
+    "required": true,
+    "minVersion": "0.7.11",
+    "compatibilityLevel": "JAVA_8",
+    "target": "@env(DEFAULT)",
+    "package": "com.mrcrayfish.furniture.rift.mixin",
+    "refmap": "mixins.cfmrift.refmap.json",
+    "mixins": [
+        "MixinEntityTracker",
+        "MixinEntityTrackerEntry",
+        "MixinNetHandlerPlayClient"
+    ],
+    "client": [
+    ]
+}

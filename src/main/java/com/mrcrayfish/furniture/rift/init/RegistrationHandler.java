@@ -6,7 +6,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
 import org.dimdev.rift.listener.BlockAdder;
-import org.dimdev.rift.listener.BootstrapListener;
 import org.dimdev.rift.listener.ItemAdder;
 
 import java.util.HashMap;

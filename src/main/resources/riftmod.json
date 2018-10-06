@@ -1,0 +1,10 @@
+{
+    "id": "cfm-rift",
+    "name": "MrCrayfish's Furniture Mod",
+    "authors": [
+        "MrCrayfish"
+    ],
+    "listeners": [
+        "com.mrcrayfish.furniture.rift.init.RegistrationHandler"
+    ]
+}

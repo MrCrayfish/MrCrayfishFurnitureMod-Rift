@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "C  ",
+        "CCC",
+        "GGG"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:white_concrete"
+        },
+        "G": {
+            "item": "minecraft:light_gray_concrete"
+        }
+    },
+    "result": {
+        "item": "cfmrift:modern_table"
+    }
+}

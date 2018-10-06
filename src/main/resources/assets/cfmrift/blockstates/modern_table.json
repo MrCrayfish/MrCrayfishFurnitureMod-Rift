@@ -1,8 +1,5 @@
 {
 	"variants": {
-		"inventory": [{
-			"model": "cfmrift:block/modern_table_single"
-		}],
 		"back=false,forward=true,left=false,right=true": {
 			"model": "cfmrift:block/modern_table_two_alt",
 			"y": 90

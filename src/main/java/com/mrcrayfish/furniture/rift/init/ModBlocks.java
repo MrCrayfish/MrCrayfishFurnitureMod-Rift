@@ -1,6 +1,6 @@
 package com.mrcrayfish.furniture.rift.init;
 
-import com.mrcrayfish.furniture.rift.block.BlockTest;
+import com.mrcrayfish.furniture.rift.block.BlockModernTable;
 import net.minecraft.block.Block;
 
 /**
@@ -8,10 +8,10 @@ import net.minecraft.block.Block;
  */
 public class ModBlocks
 {
-    public static final Block TEST_BLOCK = new BlockTest();
+    public static final Block MODERN_TABLE = new BlockModernTable();
 
     public static void init()
     {
-        RegistrationHandler.add("test", TEST_BLOCK, true);
+        RegistrationHandler.add("modern_table", MODERN_TABLE, true);
     }
 }

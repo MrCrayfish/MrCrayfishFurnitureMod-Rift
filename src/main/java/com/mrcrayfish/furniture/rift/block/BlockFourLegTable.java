@@ -70,7 +70,7 @@ public class BlockFourLegTable extends Block
             {
                 base = ShapeUtils.combine(base, shape, IBooleanFunction.OR);
             }
-            builder.put(state, base);
+            builder.put(state, base.simplify());
         }
         return builder.build();
     }

@@ -1,4 +1,20 @@
 {
   "block.cfmrift.modern_table": "Modern Table",
-  "block.cfmrift.modern_chair": "Modern Chair"
+  "block.cfmrift.modern_chair": "Modern Chair",
+  "block.cfmrift.white_modern_couch": "White Modern Couch",
+  "block.cfmrift.orange_modern_couch": "Orange Modern Couch",
+  "block.cfmrift.magenta_modern_couch": "Magenta Modern Couch",
+  "block.cfmrift.light_blue_modern_couch": "Light Blue Modern Couch",
+  "block.cfmrift.yellow_modern_couch": "Yellow Modern Couch",
+  "block.cfmrift.lime_modern_couch": "Lime Modern Couch",
+  "block.cfmrift.pink_modern_couch": "Pink Modern Couch",
+  "block.cfmrift.gray_modern_couch": "Gray Modern Couch",
+  "block.cfmrift.light_gray_modern_couch": "Light Gray Modern Couch",
+  "block.cfmrift.cyan_modern_couch": "Cyan Modern Couch",
+  "block.cfmrift.purple_modern_couch": "Purple Modern Couch",
+  "block.cfmrift.blue_modern_couch": "Blue Modern Couch",
+  "block.cfmrift.brown_modern_couch": "Brown Modern Couch",
+  "block.cfmrift.green_modern_couch": "Green Modern Couch",
+  "block.cfmrift.red_modern_couch": "Red Modern Couch",
+  "block.cfmrift.black_modern_couch": "Black Modern Couch"
 }

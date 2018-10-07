@@ -1,0 +1,52 @@
+{
+    "variants": {
+        "facing=north,type=none": {
+            "model": "cfmrift:block/pink_modern_couch_none", "y": 0
+        },
+        "facing=north,type=left": {
+            "model": "cfmrift:block/pink_modern_couch_left", "y": 0
+        },
+        "facing=north,type=right": {
+            "model": "cfmrift:block/pink_modern_couch_right", "y": 0
+        },
+        "facing=north,type=both": {
+            "model": "cfmrift:block/pink_modern_couch_both", "y": 0
+        },
+        "facing=east,type=none": {
+            "model": "cfmrift:block/pink_modern_couch_none", "y": 90
+        },
+        "facing=east,type=left": {
+            "model": "cfmrift:block/pink_modern_couch_left", "y": 90
+        },
+        "facing=east,type=right": {
+            "model": "cfmrift:block/pink_modern_couch_right", "y": 90
+        },
+        "facing=east,type=both": {
+            "model": "cfmrift:block/pink_modern_couch_both", "y": 90
+        },
+        "facing=south,type=none": {
+            "model": "cfmrift:block/pink_modern_couch_none", "y": 180
+        },
+        "facing=south,type=left": {
+            "model": "cfmrift:block/pink_modern_couch_left", "y": 180
+        },
+        "facing=south,type=right": {
+            "model": "cfmrift:block/pink_modern_couch_right", "y": 180
+        },
+        "facing=south,type=both": {
+            "model": "cfmrift:block/pink_modern_couch_both", "y": 180
+        },
+        "facing=west,type=none": {
+            "model": "cfmrift:block/pink_modern_couch_none", "y": 270
+        },
+        "facing=west,type=left": {
+            "model": "cfmrift:block/pink_modern_couch_left", "y": 270
+        },
+        "facing=west,type=right": {
+            "model": "cfmrift:block/pink_modern_couch_right", "y": 270
+        },
+        "facing=west,type=both": {
+            "model": "cfmrift:block/pink_modern_couch_both", "y": 270
+        }
+    }
+}

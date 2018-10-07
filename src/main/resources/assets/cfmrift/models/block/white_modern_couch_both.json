@@ -1,0 +1,6 @@
+{
+    "parent": "cfmrift:block/modern_couch_both",
+    "textures": {
+        "color": "block/white_concrete"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "LCL",
+        "LSL"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:light_gray_concrete"
+        },
+        "C": {
+            "item": "minecraft:red_concrete"
+        },
+        "S": {
+            "item": "minecraft:white_concrete"
+        }
+    },
+    "result": {
+        "item": "cfmrift:red_modern_couch"
+    }
+}

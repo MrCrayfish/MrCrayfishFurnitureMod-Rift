@@ -6,7 +6,7 @@
     ],
     "listeners": [
         "com.mrcrayfish.furniture.rift.mixin.MixinListener",
-        "com.mrcrayfish.furniture.rift.init.RegistrationHandler",
+        "com.mrcrayfish.furniture.rift.init.ModBlocks",
         "com.mrcrayfish.furniture.rift.init.ModEntities",
         "com.mrcrayfish.furniture.rift.init.ModEntityRenders"
     ]

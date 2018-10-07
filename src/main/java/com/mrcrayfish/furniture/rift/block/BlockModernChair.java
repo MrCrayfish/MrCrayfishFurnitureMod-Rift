@@ -55,13 +55,7 @@ public class BlockModernChair extends BlockFurniture
             shapes.add(LEG_BOTTOM_LEFT_SHAPE[facing.getHorizontalIndex()]);
             shapes.add(LEG_BOTTOM_RIGHT_SHAPE[facing.getHorizontalIndex()]);
             shapes.add(LEG_BOTTOM_BACK_SHAPE[facing.getHorizontalIndex()]);
-
-            VoxelShape base = ShapeUtils.empty();
-            for(VoxelShape shape : shapes)
-            {
-                base = ShapeUtils.combine(base, shape, IBooleanFunction.OR);
-            }
-            builder.put(state, base);
+            builder.put(state, VoxelShapeHelper.combineAll(shapes));
         }
         return builder.build();
     }

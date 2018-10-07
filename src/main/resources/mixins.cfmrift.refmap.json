@@ -1,0 +1,37 @@
+{
+    "mappings": {
+        "com/mrcrayfish/furniture/rift/mixin/MixinEntityTrackerEntry": {
+            "createSpawnPacket": "Lnet/minecraft/entity/EntityTrackerEntry;func_151260_c()Lnet/minecraft/network/Packet;"
+        },
+        "com/mrcrayfish/furniture/rift/mixin/MixinNetHandlerPlayClient": {
+            "handleSpawnObject": "Lnet/minecraft/client/network/NetHandlerPlayClient;func_147235_a(Lnet/minecraft/network/play/server/SPacketSpawnObject;)V"
+        },
+        "com/mrcrayfish/furniture/rift/mixin/MixinEntityTracker": {
+            "track": "Lnet/minecraft/entity/EntityTracker;func_72786_a(Lnet/minecraft/entity/Entity;)V"
+        }
+    },
+    "data": {
+        "notch": {
+            "com/mrcrayfish/furniture/rift/mixin/MixinEntityTrackerEntry": {
+                "createSpawnPacket": "Ltg;e()Liv;"
+            },
+            "com/mrcrayfish/furniture/rift/mixin/MixinNetHandlerPlayClient": {
+                "handleSpawnObject": "Lcqs;a(Liz;)V"
+            },
+            "com/mrcrayfish/furniture/rift/mixin/MixinEntityTracker": {
+                "track": "Lsy;a(Laeo;)V"
+            }
+        },
+        "searge": {
+            "com/mrcrayfish/furniture/rift/mixin/MixinEntityTrackerEntry": {
+                "createSpawnPacket": "Lnet/minecraft/entity/EntityTrackerEntry;func_151260_c()Lnet/minecraft/network/Packet;"
+            },
+            "com/mrcrayfish/furniture/rift/mixin/MixinNetHandlerPlayClient": {
+                "handleSpawnObject": "Lnet/minecraft/client/network/NetHandlerPlayClient;func_147235_a(Lnet/minecraft/network/play/server/SPacketSpawnObject;)V"
+            },
+            "com/mrcrayfish/furniture/rift/mixin/MixinEntityTracker": {
+                "track": "Lnet/minecraft/entity/EntityTracker;func_72786_a(Lnet/minecraft/entity/Entity;)V"
+            }
+        }
+    }
+}

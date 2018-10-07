@@ -2,13 +2,16 @@ buildscript {
     repositories {
         jcenter()
         maven { url 'https://www.dimdev.org/maven/' }
+        maven { url 'http://repo.spongepowered.org/maven' }
     }
     dependencies {
         classpath 'org.dimdev:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
     }
 }
 
 apply plugin: 'net.minecraftforge.gradle.tweaker-client'
+apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'java'
 
 group 'com.mrcrayfish'
@@ -32,4 +35,9 @@ minecraft {
     mappings = 'snapshot_20180826'
     runDir = 'run'
     tweakClass = 'org.dimdev.riftloader.launch.RiftLoaderClientTweaker'
+}
+
+mixin {
+    defaultObfuscationEnv notch
+    add sourceSets.main, 'mixins.cfmrift.refmap.json'
 }

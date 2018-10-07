@@ -3,6 +3,7 @@ package com.mrcrayfish.furniture.rift.init;
 import com.mrcrayfish.furniture.rift.Constants;
 import com.mrcrayfish.furniture.rift.block.BlockModernChair;
 import com.mrcrayfish.furniture.rift.block.BlockModernCouch;
+import com.mrcrayfish.furniture.rift.block.BlockModernTV;
 import com.mrcrayfish.furniture.rift.block.BlockModernTable;
 import net.minecraft.block.Block;
 import net.minecraft.item.EnumDyeColor;
@@ -17,6 +18,7 @@ import org.dimdev.rift.listener.ItemAdder;
  */
 public class ModBlocks implements BlockAdder, ItemAdder
 {
+    public static final Block MODERN_TV = new BlockModernTV();
     public static final Block MODERN_TABLE = new BlockModernTable();
     public static final Block MODERN_CHAIR = new BlockModernChair();
     public static final Block WHITE_MODERN_COUCH = new BlockModernCouch(EnumDyeColor.WHITE);
@@ -39,6 +41,7 @@ public class ModBlocks implements BlockAdder, ItemAdder
     @Override
     public void registerBlocks()
     {
+        registerBlock("modern_tv", MODERN_TV);
         registerBlock("modern_table", MODERN_TABLE);
         registerBlock("modern_chair", MODERN_CHAIR);
         registerBlock("white_modern_couch", WHITE_MODERN_COUCH);
@@ -62,6 +65,7 @@ public class ModBlocks implements BlockAdder, ItemAdder
     @Override
     public void registerItems()
     {
+        Item.register(MODERN_TV, ItemGroup.DECORATIONS);
         Item.register(MODERN_TABLE, ItemGroup.DECORATIONS);
         Item.register(MODERN_CHAIR, ItemGroup.DECORATIONS);
         Item.register(WHITE_MODERN_COUCH, ItemGroup.DECORATIONS);

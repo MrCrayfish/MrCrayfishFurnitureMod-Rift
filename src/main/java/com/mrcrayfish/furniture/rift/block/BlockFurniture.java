@@ -21,7 +21,6 @@ public class BlockFurniture extends BlockHorizontal
         super(builder);
     }
 
-    @Nullable
     @Override
     public IBlockState getStateForPlacement(BlockItemUseContext context)
     {

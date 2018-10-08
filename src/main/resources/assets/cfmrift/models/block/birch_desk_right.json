@@ -1,0 +1,8 @@
+{
+    "parent": "cfmrift:block/desk_right",
+    "textures": {
+        "top": "block/light_gray_concrete",
+        "primary": "block/birch_log",
+        "secondary": "block/birch_planks"
+    }
+}

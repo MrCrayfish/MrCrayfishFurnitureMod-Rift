@@ -1,0 +1,8 @@
+{
+    "parent": "cfmrift:block/desk_left_corner",
+    "textures": {
+        "top": "block/light_gray_terracotta",
+        "primary": "block/polished_granite",
+        "secondary": "block/white_terracotta"
+    }
+}

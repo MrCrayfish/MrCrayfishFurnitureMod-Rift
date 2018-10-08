@@ -17,5 +17,15 @@
   "block.cfmrift.brown_modern_couch": "Brown Modern Couch",
   "block.cfmrift.green_modern_couch": "Green Modern Couch",
   "block.cfmrift.red_modern_couch": "Red Modern Couch",
-  "block.cfmrift.black_modern_couch": "Black Modern Couch"
+  "block.cfmrift.black_modern_couch": "Black Modern Couch",
+  "block.cfmrift.oak_desk": "Oak Desk",
+  "block.cfmrift.spruce_desk": "Spruce Desk",
+  "block.cfmrift.birch_desk": "Birch Desk",
+  "block.cfmrift.jungle_desk": "Jungle Desk",
+  "block.cfmrift.acacia_desk": "Acacia Desk",
+  "block.cfmrift.dark_oak_desk": "Dark Oak Desk",
+  "block.cfmrift.stone_desk": "Stone Desk",
+  "block.cfmrift.granite_desk": "Granite Desk",
+  "block.cfmrift.diorite_desk": "Diorite Desk",
+  "block.cfmrift.andesite_desk": "Andesite Desk"
 }

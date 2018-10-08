@@ -1,0 +1,8 @@
+{
+    "parent": "cfmrift:block/desk_none",
+    "textures": {
+        "top": "block/black_terracotta",
+        "primary": "block/spruce_log",
+        "secondary": "block/spruce_planks"
+    }
+}

@@ -1,11 +1,9 @@
 package com.mrcrayfish.furniture.rift.init;
 
 import com.mrcrayfish.furniture.rift.Constants;
-import com.mrcrayfish.furniture.rift.block.BlockModernChair;
-import com.mrcrayfish.furniture.rift.block.BlockModernCouch;
-import com.mrcrayfish.furniture.rift.block.BlockModernTV;
-import com.mrcrayfish.furniture.rift.block.BlockModernTable;
+import com.mrcrayfish.furniture.rift.block.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -37,6 +35,16 @@ public class ModBlocks implements BlockAdder, ItemAdder
     public static final Block GREEN_MODERN_COUCH = new BlockModernCouch(EnumDyeColor.GREEN);
     public static final Block RED_MODERN_COUCH = new BlockModernCouch(EnumDyeColor.RED);
     public static final Block BLACK_MODERN_COUCH = new BlockModernCouch(EnumDyeColor.BLACK);
+    public static final Block DESK_OAK = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_SPRUCE = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_BIRCH = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_JUNGLE = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_ACACIA = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_DARK_OAK = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_STONE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
+    public static final Block DESK_GRANITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
+    public static final Block DESK_DIORITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
+    public static final Block DESK_ANDESITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
 
     @Override
     public void registerBlocks()
@@ -60,6 +68,16 @@ public class ModBlocks implements BlockAdder, ItemAdder
         registerBlock("green_modern_couch", GREEN_MODERN_COUCH);
         registerBlock("red_modern_couch", RED_MODERN_COUCH);
         registerBlock("black_modern_couch", BLACK_MODERN_COUCH);
+        registerBlock("oak_desk", DESK_OAK);
+        registerBlock("spruce_desk", DESK_SPRUCE);
+        registerBlock("birch_desk", DESK_BIRCH);
+        registerBlock("jungle_desk", DESK_JUNGLE);
+        registerBlock("acacia_desk", DESK_ACACIA);
+        registerBlock("dark_oak_desk", DESK_DARK_OAK);
+        registerBlock("stone_desk", DESK_STONE);
+        registerBlock("granite_desk", DESK_GRANITE);
+        registerBlock("diorite_desk", DESK_DIORITE);
+        registerBlock("andesite_desk", DESK_ANDESITE);
     }
 
     @Override
@@ -84,6 +102,16 @@ public class ModBlocks implements BlockAdder, ItemAdder
         Item.register(GREEN_MODERN_COUCH, ItemGroup.DECORATIONS);
         Item.register(RED_MODERN_COUCH, ItemGroup.DECORATIONS);
         Item.register(BLACK_MODERN_COUCH, ItemGroup.DECORATIONS);
+        Item.register(DESK_OAK, ItemGroup.DECORATIONS);
+        Item.register(DESK_SPRUCE, ItemGroup.DECORATIONS);
+        Item.register(DESK_BIRCH, ItemGroup.DECORATIONS);
+        Item.register(DESK_JUNGLE, ItemGroup.DECORATIONS);
+        Item.register(DESK_ACACIA, ItemGroup.DECORATIONS);
+        Item.register(DESK_DARK_OAK, ItemGroup.DECORATIONS);
+        Item.register(DESK_STONE, ItemGroup.DECORATIONS);
+        Item.register(DESK_GRANITE, ItemGroup.DECORATIONS);
+        Item.register(DESK_DIORITE, ItemGroup.DECORATIONS);
+        Item.register(DESK_ANDESITE, ItemGroup.DECORATIONS);
     }
 
     private void registerBlock(String id, Block block)

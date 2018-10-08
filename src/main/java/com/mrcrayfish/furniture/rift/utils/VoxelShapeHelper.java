@@ -17,7 +17,7 @@ public class VoxelShapeHelper
         {
             result = ShapeUtils.combine(result, shape, IBooleanFunction.OR);
         }
-        return result;
+        return result.simplify();
     }
 
     public static VoxelShape[] getRotatedVoxelShapes(VoxelShape source)

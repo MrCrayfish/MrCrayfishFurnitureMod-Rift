@@ -20,7 +20,7 @@ import javax.annotation.Nullable;
 /**
  * Author: MrCrayfish
  */
-public class BlockModernTV extends BlockFurniture
+public class BlockModernTV extends BlockFurnitureWaterlogged
 {
     public static final BooleanProperty MOUNTED = BooleanProperty.create("mounted");
 

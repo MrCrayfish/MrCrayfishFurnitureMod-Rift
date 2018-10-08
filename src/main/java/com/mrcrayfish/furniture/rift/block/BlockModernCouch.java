@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class BlockModernCouch extends BlockFurniture
+public class BlockModernCouch extends BlockFurnitureWaterlogged
 {
     public static final EnumProperty<CouchType> TYPE = EnumProperty.create("type", CouchType.class);
 
@@ -36,7 +36,7 @@ public class BlockModernCouch extends BlockFurniture
     public BlockModernCouch(EnumDyeColor color)
     {
         super(Block.Builder.create(Material.WOOD, color).hardnessAndResistance(0.5F, 1.0F));
-        this.setDefaultState(this.getStateContainer().getBaseState().withProperty(HORIZONTAL_FACING, EnumFacing.NORTH).withProperty(TYPE, CouchType.BOTH));
+        this.setDefaultState(this.getStateContainer().getBaseState().withProperty(HORIZONTAL_FACING, EnumFacing.NORTH).withProperty(TYPE, CouchType.BOTH).withProperty(WATERLOGGED, false));
         SHAPES = this.generateShapes(this.getStateContainer().getValidStates());
     }
 

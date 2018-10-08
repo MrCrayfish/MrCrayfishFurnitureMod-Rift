@@ -2,6 +2,7 @@ package com.mrcrayfish.furniture.rift.block;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
+import com.mrcrayfish.furniture.rift.utils.VoxelShapeHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
@@ -21,7 +22,7 @@ import java.util.List;
 /**
  * Author: MrCrayfish
  */
-public class BlockFourLegTable extends Block
+public class BlockFourLegTable extends BlockWaterlogged
 {
     public static final BooleanProperty FORWARD = BooleanProperty.create("forward");
     public static final BooleanProperty BACK = BooleanProperty.create("back");
@@ -65,12 +66,7 @@ public class BlockFourLegTable extends Block
                 if(!left) shapes.add(LEG_BACK_RIGHT_SHAPE);
             }
 
-            VoxelShape base = ShapeUtils.empty();
-            for(VoxelShape shape : shapes)
-            {
-                base = ShapeUtils.combine(base, shape, IBooleanFunction.OR);
-            }
-            builder.put(state, base.simplify());
+            builder.put(state, VoxelShapeHelper.combineAll(shapes));
         }
         return builder.build();
     }
@@ -112,6 +108,7 @@ public class BlockFourLegTable extends Block
     @Override
     protected void fillStateContainer(StateContainer.Builder<Block, IBlockState> builder)
     {
+        super.fillStateContainer(builder);
         builder.add(FORWARD);
         builder.add(BACK);
         builder.add(LEFT);

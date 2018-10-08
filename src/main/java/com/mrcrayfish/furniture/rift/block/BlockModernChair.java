@@ -5,10 +5,19 @@ import com.google.common.collect.ImmutableMap;
 import com.mrcrayfish.furniture.rift.entity.EntitySeat;
 import com.mrcrayfish.furniture.rift.utils.VoxelShapeHelper;
 import net.minecraft.block.Block;
+import net.minecraft.block.IBucketPickupHandler;
+import net.minecraft.block.ILiquidContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.fluid.Fluid;
+import net.minecraft.fluid.IFluidState;
+import net.minecraft.init.Fluids;
 import net.minecraft.item.EnumDyeColor;
+import net.minecraft.state.BooleanProperty;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.state.properties.SlabType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
@@ -16,19 +25,20 @@ import net.minecraft.util.math.shapes.IBooleanFunction;
 import net.minecraft.util.math.shapes.ShapeUtils;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BlockModernChair extends BlockFurniture
+public class BlockModernChair extends BlockFurnitureWaterlogged
 {
     public final ImmutableMap<IBlockState, VoxelShape> SHAPES;
 
     public BlockModernChair()
     {
         super(Block.Builder.create(Material.WOOD, EnumDyeColor.WHITE).hardnessAndResistance(1.0F, 1.0F));
-        this.setDefaultState(this.getStateContainer().getBaseState().withProperty(HORIZONTAL_FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.getStateContainer().getBaseState().withProperty(HORIZONTAL_FACING, EnumFacing.NORTH).withProperty(WATERLOGGED, false));
         SHAPES = this.generateShapes(this.getStateContainer().getValidStates());
     }
 
@@ -77,7 +87,8 @@ public class BlockModernChair extends BlockFurniture
     {
         return EntitySeat.create(world, pos, 5.5 * 0.0625, player);
     }
-/*
+
+    /*
     @Override
     public boolean hasComparatorInputOverride(IBlockState state)
     {

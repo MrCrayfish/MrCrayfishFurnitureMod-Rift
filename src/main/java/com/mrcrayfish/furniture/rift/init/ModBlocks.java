@@ -45,6 +45,16 @@ public class ModBlocks implements BlockAdder, ItemAdder
     public static final Block DESK_GRANITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
     public static final Block DESK_DIORITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
     public static final Block DESK_ANDESITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
+    /*public static final Block DESK_CABINET_OAK = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_CABINET_SPRUCE = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_CABINET_BIRCH = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_CABINET_JUNGLE = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_CABINET_ACACIA = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_CABINET_DARK_OAK = new BlockDesk(EnumDyeColor.BROWN);
+    public static final Block DESK_CABINET_STONE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
+    public static final Block DESK_CABINET_GRANITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
+    public static final Block DESK_CABINET_DIORITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);
+    public static final Block DESK_CABINET_ANDESITE = new BlockDesk(EnumDyeColor.LIGHT_GRAY);*/
 
     @Override
     public void registerBlocks()
@@ -78,6 +88,16 @@ public class ModBlocks implements BlockAdder, ItemAdder
         registerBlock("granite_desk", DESK_GRANITE);
         registerBlock("diorite_desk", DESK_DIORITE);
         registerBlock("andesite_desk", DESK_ANDESITE);
+        /*registerBlock("oak_desk_cabinet", DESK_CABINET_OAK);
+        registerBlock("spruce_desk_cabinet", DESK_CABINET_SPRUCE);
+        registerBlock("birch_desk_cabinet", DESK_CABINET_BIRCH);
+        registerBlock("jungle_desk_cabinet", DESK_CABINET_JUNGLE);
+        registerBlock("acacia_desk_cabinet", DESK_CABINET_ACACIA);
+        registerBlock("dark_oak_desk_cabinet", DESK_CABINET_DARK_OAK);
+        registerBlock("stone_desk_cabinet", DESK_CABINET_STONE);
+        registerBlock("granite_desk_cabinet", DESK_CABINET_GRANITE);
+        registerBlock("diorite_desk_cabinet", DESK_CABINET_DIORITE);
+        registerBlock("andesite_desk_cabinet", DESK_CABINET_ANDESITE);*/
     }
 
     @Override
@@ -112,6 +132,16 @@ public class ModBlocks implements BlockAdder, ItemAdder
         Item.register(DESK_GRANITE, ItemGroup.DECORATIONS);
         Item.register(DESK_DIORITE, ItemGroup.DECORATIONS);
         Item.register(DESK_ANDESITE, ItemGroup.DECORATIONS);
+        /*Item.register(DESK_CABINET_OAK, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_SPRUCE, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_BIRCH, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_JUNGLE, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_ACACIA, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_DARK_OAK, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_STONE, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_GRANITE, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_DIORITE, ItemGroup.DECORATIONS);
+        Item.register(DESK_CABINET_ANDESITE, ItemGroup.DECORATIONS);*/
     }
 
     private void registerBlock(String id, Block block)

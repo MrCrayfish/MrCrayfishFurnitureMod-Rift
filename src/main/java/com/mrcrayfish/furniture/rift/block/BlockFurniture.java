@@ -31,11 +31,7 @@ public abstract class BlockFurniture extends BlockHorizontal
         builder.add(HORIZONTAL_FACING);
     }
 
-    @Override
-    public boolean isFullCube(IBlockState p_isFullCube_1_)
-    {
-        return false;
-    }
+
 
     @Override
     public BlockRenderLayer getRenderLayer()
